@@ -3,39 +3,39 @@
     <main>
         <div>
             <h1>My Tasks</h1>
-                <table>
-                    <thead>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Assignee</th>
+                        <th>Start date</th>
+                        <th>Due date</th>
+                        <th>Is completed</th>
                         <tr>
-                            <th>Name</th>
-                            <th>Assignee</th>
-                            <th>Start date</th>
-                            <th>Due date</th>
-                            <th>Is completed</th>
-                        <tr>
-                    </thead>
+                        </thead>
                         {% for task in task_list %}
-                        <tbody>
-                            <tr>
-                                <td>{{task.name}}</td>
-                                <td>{{task.start_date}}</td>
-                                <td>{{task.due_date}}</td>
-                                <td>
-                                    {% if task.is_completed == False %}
-                                        <form method="post" action="{% url 'complete_task' task.id %}">
-                                            {% csrf_token %}
-                                            <input type="hidden" name="is_completed" value="True">
-                                            <button>Complete</button>
-                                        </form>
-                                    {%else%}
-                                        {{task.is_completed|yesno:"done,  ,  "}}
-                                    {%endif%}
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-            {%empty%}
-                    <p>You have no tasks</p>
-            {%endfor%}
-        </div>
-    </main>
+                            <tbody>
+                                <tr>
+                                    <td>{{task.name}}</td>
+                                    <td>{{task.start_date}}</td>
+                                    <td>{{task.due_date}}</td>
+                                    <td>
+                                        {% if task.is_completed == False %}
+                                            <form method="post" action="{% url 'complete_task' task.id %}">
+                                                {% csrf_token %}
+                                                <input type="hidden" name="is_completed" value="True">
+                                                <button>Complete</button>
+                                            </form>
+                                        {%else%}
+                                            {{task.is_completed|yesno:"done,  ,  "}}
+                                        {%endif%}
+                                    </td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        {%empty%}
+                            <p>You have no tasks</p>
+                        {%endfor%}
+                    </div>
+                </main>
 {%endblock content%}

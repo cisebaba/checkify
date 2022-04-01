@@ -6,30 +6,33 @@
             <h1>{{project.name}}</h1>
             {{ project.description|markdownify }}
             <h2>Task</h2>
-                <table>
-                    <thead>
+            <p>
+                <a href="{% url 'create_task'%}">Create a new task</a>
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Assignee</th>
+                        <th>Start date</th>
+                        <th>Due date</th>
+                        <th>Is completed</th>
                         <tr>
-                            <th>Name</th>
-                            <th>Assignee</th>
-                            <th>Start date</th>
-                            <th>Due date</th>
-                            <th>Is completed</th>
-                        <tr>
-                    </thead>
-                    {% for task in project.tasks.all %}
-                    <tbody>
-                        <tr>
-                            <td>{{task.name}}</td>
-                            <td>{{task.assignee}}</td>
-                            <td>{{task.start_date}}</td>
-                            <td>{{task.due_date}}</td>
-                            <td>{{task.is_completed|yesno}}</td>
-                        </tr>
-                    </tbody>
-                </table>
-                    {%empty%}
-                        <p>This project has no tasks</p>
-                    {%endfor%}
-        </div>
-    </main>
+                        </thead>
+                        {% for task in project.tasks.all %}
+                            <tbody>
+                                <tr>
+                                    <td>{{task.name}}</td>
+                                    <td>{{task.assignee}}</td>
+                                    <td>{{task.start_date}}</td>
+                                    <td>{{task.due_date}}</td>
+                                    <td>{{task.is_completed|yesno}}</td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        {%empty%}
+                            <p>This project has no tasks</p>
+                        {%endfor%}
+                    </div>
+                </main>
 {% endblock content %}
