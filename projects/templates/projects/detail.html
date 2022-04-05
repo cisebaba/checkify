@@ -9,30 +9,32 @@
             <p>
                 <a href="{% url 'create_task'%}">Create a new task</a>
             </p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Assignee</th>
-                        <th>Start date</th>
-                        <th>Due date</th>
-                        <th>Is completed</th>
+            {%if project.tasks.all|length == 0%}
+                <p>This project has no tasks</p>
+            {%else%}
+                <table>
+                    <thead>
                         <tr>
-                        </thead>
-                        <tbody>
+                            <th>Name</th>
+                            <th>Assignee</th>
+                            <th>Start date</th>
+                            <th>Due date</th>
+                            <th>Is completed</th>
+                        <tr>
+                    </thead>
+                    <tbody>
                         {% for task in project.tasks.all %}
-                                <tr>
-                                    <td>{{task.name}}</td>
-                                    <td>{{task.assignee}}</td>
-                                    <td>{{task.start_date}}</td>
-                                    <td>{{task.due_date}}</td>
-                                    <td>{{task.is_completed|yesno}}</td>
-                                </tr>
-                        {%empty%}
-                            <p>This project has no tasks</p>
+                            <tr>
+                                <td>{{task.name}}</td>
+                                <td>{{task.assignee}}</td>
+                                <td>{{task.start_date}}</td>
+                                <td>{{task.due_date}}</td>
+                                <td>{{task.is_completed|yesno}}</td>
+                            </tr>
                         {%endfor%}
-                        </tbody>
-            </table>
-                    </div>
-                </main>
+                    </tbody>
+                </table>
+            {%endif%}
+        </div>
+    </main>
 {% endblock content %}

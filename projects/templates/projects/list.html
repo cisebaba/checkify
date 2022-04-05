@@ -16,17 +16,17 @@
                             <th>Number of tasks</th>
                             <tr>
                             </thead>
+                            <tbody>
                             {%for project in project_list%}
-                                <tbody>
                                     <tr>
                                         <td>
                                             <a href="{% url 'show_project' project.id %}">{{project.name}}<a/>
-                                            </td>
-                                            <td>{{project.tasks.all|length}}</td>
-                                        </tr>
-                                    </tbody>
+                                        </td>
+                                        <td>{{project.tasks.all|length}}</td>
+                                    </tr>
                             {% endfor %}
-                        </table>
+                        </tbody>
+                </table>   
             {% endif %}
         </div>
     </main>
