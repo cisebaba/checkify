@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% for result in results %}
+        <h2>You searched for</h2>
+        <a href= "{% url 'show_project' result.pk %}">{{result.name}}</a>
+    {%empty%}
+        <h2>Hey! You forgot to search a Project or Task</h2>
+    {% endfor %}
+{% endblock content %}
+
