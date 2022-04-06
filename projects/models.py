@@ -13,3 +13,13 @@ class Project(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class AddNotes(models.Model):
+    note = models.TextField(null=True)
+    project = models.ForeignKey(
+        "projects.Project", related_name="notes", on_delete=models.CASCADE
+    )
+
+    def __str__(self):
+        return self.name

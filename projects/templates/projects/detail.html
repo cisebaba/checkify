@@ -35,6 +35,10 @@
                     </tbody>
                 </table>
             {%endif%}
+            <a href="{% url 'add_note' project.id %}">Add a note</a>
+            {% for note in project.notes.all%}
+                <p>{{note.note}}</p>
+            {%endfor%}
         </div>
     </main>
 {% endblock content %}
