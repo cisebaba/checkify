@@ -1,23 +1,22 @@
 h1,
-h2,
-p {
+h2 {
     text-align: center;
-    font-family: "Amazon Ember", sans-serif;
-    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+
 }
 
 .navigation {
     display: grid;
-    grid-template-columns: repeat(4, auto);
-    justify-content: center;
+    grid-template-columns: repeat(5, auto);
+    justify-content: left;
     list-style: none;
     margin: 0;
     padding: 0;
-    background-color: rgb(250, 246, 246);
+    background-color: #203239;
 }
 
 table {
-    border: 1px solid rgb(240, 216, 216);
+    border: 1px solid #EEEDDE;
     border-collapse: collapse;
     max-width: 800px;
     min-width: 400px;
@@ -26,40 +25,50 @@ table {
 
 th,
 td {
-    font-family: "Amazon Ember", sans-serif;
-    border: 2.5px solid rgb(0, 3, 4);
+    font-family: 'Oswald', sans-serif;
+    color: #203239;
+    border: 1px solid #203239;
     padding: 1em;
 }
 
 .nav-item {
     margin: 1em;
+    color: #203239;
 }
 
-body {
-    background-color: #fff;
+body,
+html {
+    background-color: #ffff;
     background-size: 100% 1.2em;
 }
 
 .new-form {
-    background-color: white;
+    background-color: #eae9e3;
     border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px #203239;
     margin: auto;
     max-width: 400px;
     padding: 2em;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    font-size: 13px;
+    color: #203239;
+    align-content: left;
 }
 
 button,
-.nav-item {
+.nav-item,
+.create-button {
     background-color: #fff;
     border: 1px solid #d5d9d9;
     border-radius: 8px;
     box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
     box-sizing: border-box;
-    color: #0f1111;
+    color: #203239;
     cursor: pointer;
     display: inline-block;
-    font-family: "Amazon Ember", sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
     font-size: 13px;
     line-height: 29px;
     padding: 0 10px 0 11px;
@@ -75,28 +84,48 @@ button,
 }
 
 button,
-.nav-item:hover {
+.nav-item,
+.create-button:hover {
     background-color: #f7fafa;
 }
 
 button,
-.nav-item:focus {
-    border-color: #008296;
-    box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+.nav-item,
+.create-button:focus {
+    border-color: #808182;
+    box-shadow: rgba(75, 78, 78, 0.5) 0 2px 5px 0;
     outline: 0;
 }
 
-footer {
-    clear: both;
-    position: relative;
-    height: 200px;
-    margin-top: -200px;
+p {
+    font-family: 'Roboto Mono', monospace;
+    color: black;
+    font-weight: 400;
+    text-align: center;
+    padding-top: .5em;
+    padding-bottom: 1em;
 }
 
-.create-button {
+.notes {
+    padding-top: 0.5em;
+    padding-left: 20%;
+    font-weight: bold;
+    text-align: left;
+    font-style: oblique;
+
+}
+
+.create-link {
+    color: #203239
+}
+
+.search {
+    width: 100%;
+    position: relative;
     display: flex;
-    justify-content: center;
-    /* align-items: center; */
-    /* color: #008296; */
-    /* margin: auto; */
+}
+
+.wrap {
+    margin-left: 275%;
+    margin-top: 1em;
 }

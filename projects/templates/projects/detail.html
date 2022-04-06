@@ -35,9 +35,11 @@
                     </tbody>
                 </table>
             {%endif%}
-            <a href="{% url 'add_note' project.id %}">Add a note</a>
+            <p class="create-link">
+                <a href="{% url 'add_note' project.id %}" class="p">Add a note</a>
+            </p>
             {% for note in project.notes.all%}
-                <p>{{note.note}}</p>
+                <p class = "notes">Note:{{note.note}}</p>
             {%endfor%}
         </div>
     </main>

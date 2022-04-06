@@ -25,11 +25,14 @@
                         <a href="{% url 'logout'%}">Logout</a>
                     </li>
                     <li>
-                        <form action="{% url 'search_project' %}" method="POST">
-                            {% csrf_token %} 
-                            <input type="text" name="name">
-                            <input type="submit" name="submit" value="Search">
-                        </form>
+                        <div class="wrap">
+
+                            <form action="{% url 'search_project' %}" method="POST" class="search">
+                                {% csrf_token %} 
+                                <input type="text" name="name">
+                                <input type="submit" name="submit" value="Search" class="create-button">
+                            </form>
+                        </div>
                     </li>
                 {%else%}
                     <li class= "nav-item">
