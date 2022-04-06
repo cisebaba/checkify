@@ -1,8 +1,11 @@
-h1,h2,p {
+h1,
+h2,
+p {
     text-align: center;
-    font-family: "Amazon Ember",sans-serif;
-    font-weight:bold;
+    font-family: "Amazon Ember", sans-serif;
+    font-weight: bold;
 }
+
 .navigation {
     display: grid;
     grid-template-columns: repeat(4, auto);
@@ -11,7 +14,8 @@ h1,h2,p {
     margin: 0;
     padding: 0;
     background-color: rgb(250, 246, 246);
-  }
+}
+
 table {
     border: 1px solid rgb(240, 216, 216);
     border-collapse: collapse;
@@ -20,18 +24,22 @@ table {
     margin: auto;
 }
 
-th, td {
-    font-family: "Amazon Ember",sans-serif;
+th,
+td {
+    font-family: "Amazon Ember", sans-serif;
     border: 2.5px solid rgb(0, 3, 4);
     padding: 1em;
 }
+
 .nav-item {
     margin: 1em;
 }
+
 body {
     background-color: #fff;
     background-size: 100% 1.2em;
 }
+
 .new-form {
     background-color: white;
     border-radius: 4px;
@@ -40,7 +48,9 @@ body {
     max-width: 400px;
     padding: 2em;
 }
-button, .nav-item {
+
+button,
+.nav-item {
     background-color: #fff;
     border: 1px solid #d5d9d9;
     border-radius: 8px;
@@ -49,7 +59,7 @@ button, .nav-item {
     color: #0f1111;
     cursor: pointer;
     display: inline-block;
-    font-family: "Amazon Ember",sans-serif;
+    font-family: "Amazon Ember", sans-serif;
     font-size: 13px;
     line-height: 29px;
     padding: 0 10px 0 11px;
@@ -61,18 +71,32 @@ button, .nav-item {
     touch-action: manipulation;
     vertical-align: middle;
     width: 100px;
+    justify-content: center;
 }
-button, .nav-item:hover {
+
+button,
+.nav-item:hover {
     background-color: #f7fafa;
 }
-button, .nav-item:focus {
+
+button,
+.nav-item:focus {
     border-color: #008296;
     box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
     outline: 0;
 }
+
 footer {
     clear: both;
     position: relative;
     height: 200px;
     margin-top: -200px;
+}
+
+.create-button {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* color: #008296; */
+    /* margin: auto; */
 }
