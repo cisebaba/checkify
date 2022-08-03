@@ -5,14 +5,14 @@
         <div>
             <h1>{{project.name}}</h1>
             {{ project.description|markdownify }}
-            <h2>Task</h2>
+            <h2>Tasks</h2>
             <p>
-                <a href="{% url 'create_task'%}">Create a new task</a>
+                <a href="{% url 'create_task'%}" class="btn btn-light">Create a new task</a>
             </p>
             {%if project.tasks.all|length == 0%}
                 <p>This project has no tasks</p>
             {%else%}
-                <table>
+                <table class="table table-success table-striped">
                     <thead>
                         <tr>
                             <th>Name</th>
@@ -36,10 +36,12 @@
                 </table>
             {%endif%}
             <p class="create-link">
-                <a href="{% url 'add_note' project.id %}" class="p">Add a note</a>
+                <a href="{% url 'add_note' project.id %}" class="btn btn-light">Add a note</a>
             </p>
             {% for note in project.notes.all%}
-                <p class = "notes">Note:{{note.note}}</p>
+            <div class="card">
+                <p class = "notes">Note: {{note.note}}</p>
+            </div>
             {%endfor%}
         </div>
     </main>

@@ -4,12 +4,12 @@
         <div>
             <h1>Projects</h1>
             <p>
-                <a href="{% url 'create_project'%}">Create a new project</a>
+                <a href="{% url 'create_project'%}" class="btn btn-light">Create a new project</a>
             </p>
             {% if project_list|length == 0 %}
                 <p>You are not assigned to any projects</p>
             {% else %}
-                <table>
+                <table class="table table-success table-striped">
                     <thead>
                         <tr>
                             <th>Name</th>

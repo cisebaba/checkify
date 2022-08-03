@@ -6,7 +6,7 @@
             {% if task_list|length == 0%}
                 <p>You have no tasks</p>
             {%else%}
-            <table>
+            <table class="table table-success table-striped">
                 <thead>
                     <tr>
                         <th>Name</th>
@@ -28,10 +28,10 @@
                                 <form method="post" action="{% url 'complete_task' task.id %}">
                                     {% csrf_token %}
                                     <input type="hidden" name="is_completed" value="True">
-                                    <button>Complete</button>
+                                    <button class="btn btn-light">Complete</button>
                                 </form>
                             {%else%}
-                                {{task.is_completed|yesno:"done,  ,  "}}
+                                {{task.is_completed|yesno:"✅,  ,  "}}
                             {%endif%}
                         </td>
                     </tr>

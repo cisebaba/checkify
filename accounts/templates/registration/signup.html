@@ -1,12 +1,17 @@
 {% extends 'base.html' %}
 {% block content %}
     <main>
-        <div class="new-form">
+        <div>
             <h1>Signup</h1>
-            <form method="POST">
+            <form method="POST" class="container-sm position-absolute top-50 start-50 translate-middle">
+                <table>
                 {% csrf_token %}
-                {{form.as_p}}
-                <button>Signup</button>
+                {{form.as_table}}
+                <tr>
+                    <td>&nbsp;</td>
+                    <td><button class="btn btn-light ">Sign up</button></td>
+                </tr>
+            </table>
             </form>
         </div>
     </main>

@@ -1,131 +1,15 @@
 h1,
-h2 {
-    text-align: center;
-    font-family: 'Oswald', sans-serif;
-
+h2,
+h3 {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
 }
 
-.navigation {
+/* .banner img {
     display: grid;
-    grid-template-columns: repeat(5, auto);
-    justify-content: left;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    background-color: #203239;
-}
-
-table {
-    border: 1px solid #EEEDDE;
-    border-collapse: collapse;
-    max-width: 800px;
-    min-width: 400px;
-    margin: auto;
-}
-
-th,
-td {
-    font-family: 'Oswald', sans-serif;
-    color: #203239;
-    border: 1px solid #203239;
-    padding: 1em;
-}
-
-.nav-item {
-    margin: 1em;
-    color: #203239;
-}
-
-body,
-html {
-    background-color: #ffff;
-    background-size: 100% 1.2em;
-}
-
-.new-form {
-    background-color: #eae9e3;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px #203239;
-    margin: auto;
-    max-width: 400px;
-    padding: 2em;
-    font-family: 'Roboto Mono', monospace;
-    font-weight: bold;
-    font-size: 13px;
-    color: #203239;
-    align-content: left;
-}
-
-button,
-.nav-item,
-.create-button {
-    background-color: #fff;
-    border: 1px solid #d5d9d9;
-    border-radius: 8px;
-    box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
-    box-sizing: border-box;
-    color: #203239;
-    cursor: pointer;
-    display: inline-block;
-    font-family: 'Roboto Mono', monospace;
-    font-weight: bold;
-    font-size: 13px;
-    line-height: 29px;
-    padding: 0 10px 0 11px;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    vertical-align: middle;
-    width: 100px;
-    justify-content: center;
-}
-
-button,
-.nav-item,
-.create-button:hover {
-    background-color: #f7fafa;
-}
-
-button,
-.nav-item,
-.create-button:focus {
-    border-color: #808182;
-    box-shadow: rgba(75, 78, 78, 0.5) 0 2px 5px 0;
-    outline: 0;
-}
-
-p {
-    font-family: 'Roboto Mono', monospace;
-    color: black;
-    font-weight: 400;
-    text-align: center;
-    padding-top: .5em;
-    padding-bottom: 1em;
-}
-
-.notes {
-    padding-top: 0.5em;
-    padding-left: 20%;
-    font-weight: bold;
-    text-align: left;
-    font-style: oblique;
-
-}
-
-.create-link {
-    color: #203239
-}
-
-.search {
-    width: 100%;
-    position: relative;
-    display: flex;
-}
-
-.wrap {
-    margin-left: 275%;
-    margin-top: 1em;
-}
+    margin-left: 30;
+    margin-right: 30;
+    width: 20%;
+    width: auto;
+    height: auto;
+} */
