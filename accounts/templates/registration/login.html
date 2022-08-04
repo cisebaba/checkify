@@ -2,8 +2,9 @@
 {% block content %}
     <main>
         <div class="mb-3 row">
-            <h1>Login</h1>
+            
             <form method="post">
+                <h1><mark>Login</mark></h1>
                 {% csrf_token %}
                 {{form.as_p}}
                 <button class="btn btn-light position-absolute bottom-40 end-50">Login</button>
