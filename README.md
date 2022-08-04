@@ -6,9 +6,10 @@ Checkify is a full-stack web app to manage the company’s to-do lists.
 - Skills: Cascading Style Sheets (CSS) · HTML5 · Python (Programming Language) · Django · REST APIs
 <hr>
 <br>
+
 ## For setup
 
-<br />
+Create a virtual python environment <br />
 `python -m venv .venv`
 
 Activate the environment<br />
@@ -26,7 +27,7 @@ Run migrations<br />
 Runserver<br />
 `python manage.py runserver`
 
-Create super user<br />
+Create superuser<br />
 `python manage.py createsuperuser`
 
 Access in browser <br />
