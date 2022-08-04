@@ -10,7 +10,11 @@ Checkify is a full-stack web app to manage the company’s to-do lists.
 ## Overview 
 <div align="center"><br />
     <h3 align="center">Landing Page and Project Detail Page</h3>
-  <img src="https://www.dropbox.com/s/e8ixusv43um89yw/landing%20page.png?dl=0" width="48%">
+  <img src="overview_img/landing_page.png" alt="homepage" width='40%'/>
+  <img src="overview_img/project_detail.png" alt="detail" width='40%'/><br />
+  <h3 align="center">Create & Assign Form and Assigned Tasks Page</h3>
+  <img src="overview_img/createandassign.png" alt="createandassign" width='40%'/>
+    <img src="overview_img/assigned_tasks.png" alt="assigned_tasks" width='40%'/><br />
   
 </div>
 
