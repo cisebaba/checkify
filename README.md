@@ -7,6 +7,19 @@ Checkify is a full-stack web app to manage the company’s to-do lists.
 <hr>
 <br>
 
+## Overview 
+<div align="center"><br />
+    <h3 align="center">Landing Page and Project Detail Page</h3>
+  ![Image](overviw_img/landing_page.png)
+  <img src="https://raw.githubusercontent.com/jeelason/zah-wines/main/ss/z-2.png" alt="wine list" width='40%'/><br />
+    <h3 align="center">submit new wine, guest submissions</h3>
+  <img src="https://raw.githubusercontent.com/jeelason/zah-wines/main/ss/z-3.png" alt="wine form" width='40%' />
+    <img src="https://raw.githubusercontent.com/jeelason/zah-wines/main/ss/z-4.png" alt="admin-tasks" width='40%' /><br />
+    <h3 align="center">Admin functionality to view and mark inquiries as complete</h3>
+    <img src="https://raw.githubusercontent.com/jeelason/zah-wines/main/ss/z-5.png" alt="admin-tasks" width='40%' /><br />
+</div>
+
+
 ## For setup
 
 Create a virtual python environment <br />
